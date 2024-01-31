@@ -26,4 +26,4 @@ def index():
 def path_name(name: str):
     return send_from_directory('dist', name)
 
-FlaskApp(app, {'bind': '127.0.0.1:8000'}).run()
+FlaskApp(app, {'bind': 'localhost:6492'}).run()
